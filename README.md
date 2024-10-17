@@ -8,3 +8,4 @@ The course is available [here](https://www.youtube.com/watch?v=vqXLGX0szIQ&list=
 ### 3. Website header
 ### 4. Dropdown menu
 ### 5. Image gallery
+### 6. Accordion
