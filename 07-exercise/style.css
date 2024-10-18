@@ -1,0 +1,30 @@
+html {
+  font-size: 16px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  line-height: 120%;
+}
+
+#loading-screen {
+  height: 100dvh;
+  background-color: #e3e3e3;
+  color: #62312d;
+
+  display: grid;
+  place-content: center;
+  text-align: center;
+  gap: 2rem;
+}
+
+@keyframes breathe {
+  from{
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.5);
+  }
+}
+
+#loading-screen > img {
+  animation: 2s ease-in-out infinite alternate breathe;
+}
