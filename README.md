@@ -11,3 +11,4 @@ The course is available [here](https://www.youtube.com/watch?v=vqXLGX0szIQ&list=
 ### 6. Accordion
 ### 7. Loading screen
 ### 8. Site preloader
+### 9. SVG text loader
