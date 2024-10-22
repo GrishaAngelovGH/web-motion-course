@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Exercise #11 || Animated Lottie icon</title>
+
+		<!-- Reset -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css">
+
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400;700&display=swap"
+			rel="stylesheet">
+
+		<link rel="stylesheet" href="./style.css">
+	</head>
+
+	<body>
+		<section id="hero">
+			<div class="container">
+				<video autoplay muted loop>
+					<source src="../resources/videos/video-2@c.mp4" type="video/mp4">
+				</video>
+
+				<header>
+					<a href="/"><img src="../resources/images/logo-l3.svg" alt="Logo"></a>
+
+					<nav>
+						<ul>
+							<li><a href="#">Work</a></li>
+							<li><a href="#">Company</a></li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="#">Careers</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+					</nav>
+				</header>
+
+				<h1>Crafting <span>digital masterpieces</span> with pixel-perfect precision.</h1>
+
+				<script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+					type="module"></script>
+
+				<dotlottie-player src="https://lottie.host/34e4a37b-c995-4dc3-aa9e-0cf7525d70bf/3uWxMH3bOk.json"
+					background="transparent" speed="1" style="width: 200px; height: 200px" loop autoplay></dotlottie-player>
+			</div>
+		</section>
+	</body>
+
+</html>

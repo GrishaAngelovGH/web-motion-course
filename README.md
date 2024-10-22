@@ -13,3 +13,4 @@ The course is available [here](https://www.youtube.com/watch?v=vqXLGX0szIQ&list=
 ### 8. Site preloader
 ### 9. SVG text loader
 ### 10. Button with animated loading dots
+### 11. Animated Lottie icon
