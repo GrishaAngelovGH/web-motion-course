@@ -1,0 +1,158 @@
+:root {
+  --default-shadow: 4px 4px 2px rgba(0, 0, 0, 0.16);
+  --orange: #F2762E;
+  --yellow: #F2B705;
+  --red: #BF0404;
+  --off-white: #E5C6B4;
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 3.1875rem;
+  color: var(--yellow);
+  -webkit-text-stroke: 1px var(--orange);
+}
+
+h2 {
+  font-size: 2.375rem;
+  color: var(--orange);
+  -webkit-text-stroke: 1px var(--red);
+  transition: all .2s ease-in-out;
+}
+
+h3,
+button {
+  font-size: 1.3125rem;
+  color: #FFF;
+  letter-spacing: 0.84px;
+  -webkit-text-stroke: 1px var(--red);
+}
+
+body {
+  background: url(../resources/images/svg-pattern-topography.svg), linear-gradient(45deg, #0468BF 0%, #3299F3 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+hgroup {
+  background-color: #022543;
+  box-shadow: var(--default-shadow);
+  border-radius: 0 0 4rem 4rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+button {
+  padding: 1.45rem 2.5rem 1rem;
+  border: 1px solid var(--yellow);
+  background-color: var(--orange);
+  border-radius: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  box-shadow: var(--default-shadow);
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+}
+
+button svg {
+  fill: white;
+  stroke: var(--red);
+  transition: all .2s ease-in-out;
+}
+
+button[disabled] {
+  background-color: var(--off-white);
+  border-color: var(--off-white);
+  color: rgba(255, 255, 255, .32);
+  -webkit-text-stroke: 1px rgba(191, 4, 4, 0.32);
+  cursor: not-allowed;
+}
+
+button:not([disabled]):hover {
+  gap: 2rem;
+}
+
+button[disabled] svg {
+  stroke: rgba(191, 4, 4, 0.32);
+  fill: var(--off-white);
+}
+
+.card-container {
+  padding: 2rem;
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 2rem;
+  padding: 1rem;
+  box-shadow: var(--default-shadow);
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+  border: 1px solid transparent;
+  height: 320px;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card figure {
+  transition: transform .2s ease-in-out;
+  margin: 0;
+}
+
+.card.selected {
+  background: var(--orange);
+  border-color: var(--yellow);
+  transform: scale(1.1);
+}
+
+.card.selected h2 {
+  color: white;
+}
+
+#luna {
+  background-image: url(../resources/illustrations/luna-walking-squence@c.svg);
+}
+
+.card figure {
+  width: 200px;
+  height: 320px;
+  background-repeat: none;
+  background-size: cover;
+}
+
+.card.selected figure {
+  animation: 0.5s steps(3) infinite walking; 
+  /* for steps we use frames - 1 */
+}
+
+@keyframes walking {
+  to {
+    background-position: 100%;
+  }
+}
