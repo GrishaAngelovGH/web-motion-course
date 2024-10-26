@@ -17,3 +17,4 @@ The course is available [here](https://www.youtube.com/watch?v=vqXLGX0szIQ&list=
 ### 12. Animated menu icon
 ### 13. Animated illustration
 ### 14. Animated avatars
+### 15. Animated logo
