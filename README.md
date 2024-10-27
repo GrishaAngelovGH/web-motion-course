@@ -18,3 +18,4 @@ The course is available [here](https://www.youtube.com/watch?v=vqXLGX0szIQ&list=
 ### 13. Animated illustration
 ### 14. Animated avatars
 ### 15. Animated logo
+### 16. Typewriter effect
