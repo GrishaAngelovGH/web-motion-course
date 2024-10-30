@@ -21,3 +21,4 @@ The course is available [here](https://www.youtube.com/watch?v=vqXLGX0szIQ&list=
 ### 16. Typewriter effect
 ### 17. Mouse follow effect
 ### 18. Scroll-triggered animation
+### 19: Parallax animation
